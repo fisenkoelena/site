@@ -434,7 +434,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 33px;
 line-height: 42px;
 padding-bottom: 15px;
-text-transform:;
 }
 
 .banner-bigger {
@@ -496,14 +495,14 @@ line-height: 14px;
 .example-left-image {
   flex: 1;
   max-width: 400px;
-  display: flex; /* Обеспечивает выравнивание изображения внутри контейнера */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .example-left-image img {
   width: 100%;
-  height: auto; /* Сохраняет пропорции изображения */
+  height: auto;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -519,7 +518,7 @@ line-height: 14px;
 }
 
 .example-info-column {
-  width: 100%; /* Убираем фиксированную ширину */
+  width: 100%;
   display: flex;
   align-items: center;
   background-color: var(--Main-Secondary);
@@ -539,13 +538,98 @@ line-height: 14px;
 }
 
 .example-info-column .example-text h3 {
-  margin-bottom: 10px; /* Отступ между заголовком и текстом */
-  font-size: 1.25rem; /* Регулируем размер заголовка */
+  margin-bottom: 10px;
+  font-size: 1.25rem;
 }
 
 .example-info-column .example-text p {
   margin: 0;
   font-size: 1rem;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 20px 20px 32px;
+}
+
+.form-content {
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--Text-Secondary);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--Text-Secondary);
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+}
+
+.form-checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-checkbox-group input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.form-submit-btn {
+  background-color: var(--State-Button);
+  color: var(--Text-button);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-submit-btn:hover {
+  background-color: var(--State-Button-active);
+}
+
+.form-image-container {
+  flex: 1;
+  margin-left: 90px;
+  margin-top: 50px;
+}
+
+.form-big-image {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+.form-checkbox-group input:checked {
+  background-color: var(--Main-Secondary);
+  border-color: var(--State-Button-hower);
+}
+
+.form-checkbox-group input:checked + label {
+  color: var(--Main-Secondary);
 }
 
 @media (max-width: 1250px) {
