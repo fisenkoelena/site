@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter24pt-Regular.woff2') format('woof2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Inter";
+  src: url("./fonts/Inter24pt-Regular.woff2") format("woof2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: 'Inter';
-    src: url('./fonts/Inter24pt-SemiBold.woff2') format('woof2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Inter";
+  src: url("./fonts/Inter24pt-SemiBold.woff2") format("woof2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
 }
 /**
   Нормализация блочной модели
@@ -43,18 +43,7 @@ body,
   Убираем внешние отступы вертикали нужным тегам,
   у которых есть атрибут class
  */
-:where(
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  ul,
-  ol,
-  dl
-):where([class]) {
+:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl):where([class]) {
   margin-block: 0;
 }
 
@@ -98,7 +87,6 @@ p {
 p:where(:not([class]):not(:last-child)) {
   margin-bottom: var(--paragraphMarginBottom);
 }
-
 
 /**
   Упрощаем работу с изображениями и видео
@@ -173,10 +161,7 @@ label {
   (за исключением тех, у которых уже указан
   атрибут fill со значением 'none' или начинается с 'url')
  */
-:where([fill]:not(
-  [fill="none"],
-  [fill^="url"]
-)) {
+:where([fill]:not([fill="none"], [fill^="url"])) {
   fill: currentColor;
 }
 
@@ -185,10 +170,7 @@ label {
   (за исключением тех, у которых уже указан
   атрибут stroke со значением 'none')
  */
-:where([stroke]:not(
-  [stroke="none"],
-  [stroke^="url"]
-)) {
+:where([stroke]:not([stroke="none"], [stroke^="url"])) {
   stroke: currentColor;
 }
 
@@ -223,48 +205,52 @@ svg * {
 }
 
 :root {
-    --Main-Primary: #E9ECEE;
-    --Main-Primary-2: #F8F9FD;
-    --Main-Firstly: #A8B1CE;
-    --Main-Secondary: #80A0FF;
+  --Main-Primary: #e9ecee;
+  --Main-Primary-2: #f8f9fd;
+  --Main-Firstly: #a8b1ce;
+  --Main-Secondary: #80a0ff;
 
-    --Text-button: #F0F5FD;
-    --Text-Prymary: #1F1F1F;
-    --Text-Secondary: #696E82;
-    --Text-third: #5A81FA;
+  --Text-button: #f0f5fd;
+  --Text-Prymary: #1f1f1f;
+  --Text-Secondary: #696e82;
+  --Text-third: #5a81fa;
 
-    --State-Button: #5A80FD;
-    --State-Button-hower: #CEDEFF;
-    --State-Button-active: #2B308B;
+  --State-Button: #5a80fd;
+  --State-Button-hower: #cedeff;
+  --State-Button-active: #2b308b;
 
-    --shadow-little: 0px 3px 12px 0px rgba(29, 29, 29, 0.2);
-    --shadow-big: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);    
+  --shadow-little: 0px 3px 12px 0px rgba(29, 29, 29, 0.2);
+  --shadow-big: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
-    --border-radius-button: 8px;
-    --border-button: none;
+  --border-radius-button: 8px;
+  --border-button: none;
 
-    --border-radius-reg: 16px;
-    --border-reg: 1px solid var(--Text-Secondary);
+  --border-radius-reg: 16px;
+  --border-reg: 1px solid var(--Text-Secondary);
 
-    --font-family-base: 'Inter', sans-serif;
+  --font-family-base: "Inter", sans-serif;
 
-    --input-height: 40px;
+  --input-height: 40px;
 
-    --container-width: 1670px;
-    --container-padding-x: 15px;
-    
-    --transition-duration: 0.2s;
+  --container-width: 1670px;
+  --container-padding-x: 15px;
+
+  --transition-duration: 0.2s;
 }
 
-body{
-    font-family: var(--font-family-base);
-    font-size: 22px;
-    line-height: 1.75;
-    color: var(--Main-Primary);
-    background-color: var(--Main-Primary-2);
+body {
+  font-family: var(--font-family-base);
+  font-size: 22px;
+  line-height: 1.75;
+  color: var(--Main-Primary);
+  background-color: var(--Main-Primary-2);
 }
 
-a, button, input, textarea, svg * {
+a,
+button,
+input,
+textarea,
+svg * {
   transition-duration: var(--transition-duration);
 }
 
@@ -278,9 +264,9 @@ a:hover {
 }
 
 .container {
-    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-    margin-inline: auto;
-    padding-inline: var(--container-padding-x);
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
 }
 
 .visually-hidden {
@@ -296,9 +282,14 @@ a:hover {
   overflow: hidden !important;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .button {
@@ -307,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 48px;
   padding-inline: 24px;
   color: var(--Text-button);
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 18px;
   font-weight: 400;
   line-height: 2;
@@ -363,14 +354,14 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-big);
 }
 
-.info{
+.info {
   display: flex;
   width: 1440px;
   padding: 32px 90px;
 }
 
-.info-card-body{
-  padding-top: 90px; 
+.info-card-body {
+  padding-top: 90px;
   padding-bottom: 15px;
   padding-left: 30px;
 }
@@ -390,7 +381,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 20px;
 }
 
-
 .banner-title {
   color: var(--Text-third);
   text-align: center;
@@ -399,7 +389,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 46px;
   font-style: normal;
   letter-spacing: 1px;
-  padding-bottom: 15px ;
+  padding-bottom: 15px;
 }
 
 .banner-colums {
@@ -409,7 +399,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  display: flex; 
+  display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -419,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex: 1; 
+  flex: 1;
   max-width: 300px;
   border: 2px solid #ffffff00;
   box-shadow: var(--shadow-big);
@@ -432,13 +422,13 @@ h1, h2, h3, h4, h5, h6 {
 .banner-colums-text {
   color: var(--Text-third);
   font-size: 33px;
-line-height: 42px;
-padding-bottom: 15px;
+  line-height: 42px;
+  padding-bottom: 15px;
 }
 
 .banner-bigger {
   font-size: 22px;
-line-height: 27px;
+  line-height: 27px;
   color: var(--Text-Secondary);
 }
 
@@ -464,7 +454,7 @@ line-height: 27px;
 .banner-smaller {
   color: var(--Text-Secondary);
   font-size: 12px;
-line-height: 14px;
+  line-height: 14px;
 }
 
 .banner-small-img {
@@ -640,7 +630,6 @@ input[type="email"] {
     padding-inline: 15px;
   }
 
-
   .header-menu {
     order: 1;
     flex-basis: 100%;
@@ -660,13 +649,13 @@ input[type="email"] {
   }
 
   .header-menu-list {
-    column-gap: 24px;  
+    column-gap: 24px;
   }
 
   .header-menu-link {
     height: 32px;
   }
-  
+
   .header-actions {
     column-gap: 15px;
   }
