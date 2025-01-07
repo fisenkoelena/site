@@ -370,7 +370,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .info-card-body{
-  padding-top: 60px; 
+  padding-top: 90px; 
   padding-bottom: 15px;
   padding-left: 30px;
 }
@@ -434,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 33px;
 line-height: 42px;
 padding-bottom: 15px;
-text-transform: lowercase;
+text-transform:;
 }
 
 .banner-bigger {
@@ -460,7 +460,6 @@ line-height: 27px;
   font-size: 16.5px;
   line-height: 21px;
   padding-bottom: 10px;
-text-transform: lowercase;
 }
 
 .banner-smaller {
@@ -480,6 +479,73 @@ line-height: 14px;
   height: 330px;
   flex-shrink: 0;
   padding-bottom: 10px;
+}
+
+.example {
+  padding-top: 90px;
+}
+
+.example-container {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.example-left-image {
+  flex: 1;
+  max-width: 400px;
+  display: flex; /* Обеспечивает выравнивание изображения внутри контейнера */
+  align-items: center;
+  justify-content: center;
+}
+
+.example-left-image img {
+  width: 100%;
+  height: auto; /* Сохраняет пропорции изображения */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.example-info-columns {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.example-info-column {
+  width: 100%; /* Убираем фиксированную ширину */
+  display: flex;
+  align-items: center;
+  background-color: var(--Main-Secondary);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-big);
+  gap: 16px;
+}
+
+.example-info-column .icon {
+  flex-shrink: 0;
+}
+
+.example-info-column .icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.example-info-column .example-text h3 {
+  margin-bottom: 10px; /* Отступ между заголовком и текстом */
+  font-size: 1.25rem; /* Регулируем размер заголовка */
+}
+
+.example-info-column .example-text p {
+  margin: 0;
+  font-size: 1rem;
 }
 
 @media (max-width: 1250px) {
@@ -519,5 +585,17 @@ line-height: 14px;
   
   .header-actions {
     column-gap: 15px;
+  }
+  .example-container {
+    flex-direction: column;
+  }
+
+  .example-left-image {
+    max-width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .example-info-columns {
+    gap: 12px;
   }
 }

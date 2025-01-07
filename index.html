@@ -36,57 +36,135 @@
             </button>
         </div>
     </header>
-
     <main class="content">
         <h2 class="visually-hidden">Предложение</h2>
         <section class="info-container">
             <div class="info">
                 <div class="info-display">
-                    <img src="./images/info/display.png" alt="Инфографика, где руки ызаимодействуют с виджетами на их устройстве." class="info-card-image" width="483" height="455" loading="lazy">   
+                    <img src="./images/info/display.png"
+                        alt="Инфографика, где руки ызаимодействуют с виджетами на их устройстве."
+                        class="info-card-image" width="483" height="455" loading="lazy">
                 </div>
-    
+
                 <div class="info-card-body">
                     <h3 class="backdrop-title" data-title="Партнер">
                         надежный партнер в</br>
                         эффективной работе с</br>
                         кадровым управлением</h3>
                     <p class="info-lower-text">Современные решения для бизнеса:
-                    отчетность, подбор и анализ</p>
-                <a href="/" class="info-card-button button">
-                    Подробнее об услугах
-                </a>
+                        отчетность, подбор и анализ</p>
+                    <a href="/" class="info-card-button button">
+                        Подробнее об услугах
+                    </a>
                 </div>
             </div>
         </section>
-
         <h3 class="visually-hidden">Услуги</h3>
         <section class="banner">
             <h3 class="banner-title">Наши услуги</h3>
+            <div class="banner-colums">
+                <div class="banner-content-column">
+                    <img class="banner-small-img" src="images/banner/отчетность.png" alt="Девушка с отчетами">
+                    <h4 class="banner-colums-text-small">Нормы отчетность в API</h4>
+                    <p class="banner-smaller"> Предоставляем современные формы отчетности через API, чтобы Вы могли
+                        легко отслеживать показатели бизнеса</p>
+                </div>
+                <div class="banner-content-column banner-content-column-large">
+                    <img class="banner-big-img" src="images/banner/нормы.png" alt="Девушка с нормами планов">
+                    <h4 class="banner-colums-text">Нормы планов</h4>
+                    <p class="banner-bigger">Разрабатываем наглядные таблицы, аналитические отчеты для эффективного
+                        контроля и планирования работы компании</p>
+                </div>
+                <div class="banner-content-column">
+                    <img class="banner-small-img" src="images/banner/оценка.png" alt="Пара людей оценивают">
+                    <h4 class="banner-colums-text-small">Оценка сотрудников</h4>
+                    <p class="banner-smaller"> Проводим анализ деятельности сотрудниковс акцентом на их вклад в успех
+                        компании, предоставляем данные</p>
+                </div>
+            </div>
+        </section>
+        <h3 class="visually-hidden">Примеры работы</h3>
+        <section class="example">
+            <div class="example-container">
+                <div class="example-left-image">
+                    <img src="images/example/board.png" alt="Пример работы сайта" />
+                </div>
+
+                <ul class="example-info-columns">
+                    <li class="example-info-column">
+                        <div class="example-icon">
+                            <img src="images/example/icon1.png" alt="Иконка 1">
+                        </div>
+                        <div class="example-text">
+                            <h3>Прозрачная отчетность</h3>
+                            <p>Данные в удобном и понятном формате</p>
+                        </div>
+                    </li>
+                    <li class="example-info-column">
+                        <div class="example-icon">
+                            <img src="images/example/icon2.png" alt="Иконка 2">
+                        </div>
+                        <div class="example-text">
+                            <h3>Аналитика онлайн</h3>
+                            <p>Легкая интеграция для анализа данных</p>
+                        </div>
+                    </li>
+                    <li class="example-info-column">
+                        <div class="example-icon">
+                            <img src="images/example/icon3.png" alt="Иконка 3">
+                        </div>
+                        <div class="example-text">
+                            <h3>Подбор персонала</h3>
+                            <p>Точные решения для вашего бизнеса</p>
+                        </div>
+                    </li>
+                    <li class="example-info-column">
+                        <div class="example-icon">
+                            <img src="images/example/icon4.png" alt="Иконка 4">
+                        </div>
+                        <div class="example-text">
+                            <h3>API-интеграция</h3>
+                            <p>Принимайте решения здесь и сейчас</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
 
-
-        <div class="banner-colums">
-            <div class="banner-content-column"> 
-                <img  class="banner-small-img" src="images/banner/отчетность.png" alt="Девушка с отчетами">
-                <h4 class="banner-colums-text-small">Нормы отчетность в API</h4>
-                <p class="banner-smaller"> Предоставляем современные формы отчетности через API, чтобы Вы могли легко отслеживать показатели бизнеса</p>
+        <section class="form-container">
+            <h4 class="visually-hidden">Подать заявку</h4>
+            <div class="form-content">
+                <h1>Подать заявку</h1>
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="first-name">Имя:</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Фамилия:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="middle-name">Отчество:</label>
+                        <input type="text" id="middle-name" name="middle-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">e-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-checkbox-group">
+                        <input type="checkbox" id="agree" name="agree">
+                        <label for="agree">Я согласен на обработку персональных данных</label>
+                    </div>
+                    <button type="submit" class="form-submit-btn">Отправить</button>
+                </form>
             </div>
-            <div class="banner-content-column banner-content-column-large">
-                <img class="banner-big-img" src="images/banner/нормы.png" alt="Девушка с нормами планов">
-                <h4 class="banner-colums-text">Нормы планов</h4>
-                <p class="banner-bigger">Разрабатываем наглядные таблицы, аналитические отчеты для эффективного контроля и планирования работы компании</p>
+            <div class="form-image-container">
+                <img src="images/form/bigimg.png" alt="Стилизованная картинка" class="form-big-image">
             </div>
-            <div class="banner-content-column">
-                <img class="banner-small-img" src="images/banner/оценка.png" alt="Пара людей оценивают">
-                <h4 class="banner-colums-text-small">Оценка сотрудников</h4>
-                <p class="banner-smaller"> Проводим анализ деятельности сотрудниковс акцентом на их вклад в успех компании, предоставляем данные</p>
-            </div>
-        </div>
+        </section>
 
-
-
-        
     </main>
 
 
