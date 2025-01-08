@@ -384,7 +384,7 @@ h6 {
 .banner-title {
   color: var(--Text-third);
   text-align: center;
-  margin-top: 70px;
+  margin-top: 90px;
   font-size: 40px;
   line-height: 46px;
   font-style: normal;
@@ -461,12 +461,14 @@ h6 {
   width: 205px;
   height: 195px;
   flex-shrink: 0;
+  object-fit: contain;
 }
 
 .banner-big-img {
   width: 390px;
   height: 330px;
   flex-shrink: 0;
+  object-fit: contain;
   padding-bottom: 10px;
 }
 
@@ -604,7 +606,7 @@ input[type="email"] {
 .form-image-container {
   flex: 1;
   margin-left: 90px;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 .form-big-image {
@@ -620,6 +622,70 @@ input[type="email"] {
 
 .form-checkbox-group input:checked + label {
   color: var(--Main-Secondary);
+}
+
+.faq-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.faq-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--Text-Secondary);
+  text-align: left;
+}
+
+.faq-columns {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.faq-column {
+  width: 100%;
+  background-color: #80a0ff10;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(130, 131, 132, 0.247);
+}
+
+.faq-item {
+  padding: 15px;
+  border-bottom: 1px solid rgba(189, 211, 244, 0.492);
+}
+
+.faq-question {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--Text-Prymary);
+}
+
+.faq-arrow {
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.faq-answer {
+  display: none;
+  padding-top: 10px;
+  font-size: 18px;
+  color: var(--Text-Secondary);
+  line-height: 1.5;
+  text-align: left;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+.faq-item.open .faq-arrow {
+  transform: rotate(180deg);
 }
 
 @media (max-width: 1250px) {
@@ -670,5 +736,13 @@ input[type="email"] {
 
   .example-info-columns {
     gap: 12px;
+  }
+  .faq-columns {
+    flex-direction: column;
+  }
+
+  .faq-column {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }

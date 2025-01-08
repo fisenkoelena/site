@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eclarent</title>
+    <title>Declarent</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -162,6 +162,69 @@
                 <img src="images/form/bigimg.png" alt="Стилизованная картинка" class="form-big-image">
             </div>
         </section>
+        <section class="faq-section">
+            <h5 class="faq-title">Часто задаваемые вопросы</h5>
+            <div class="faq-columns">
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Что такое инфографика для компаний?</span>
+                            <span class="faq-arrow">&#9660;</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Мы разрабатываем визуальные материалы, такие как графики, диаграммы и схемы, которые
+                                делают информацию вашей компании понятной и доступной для целевой аудитории.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span> Какие данные о сотрудниках вы отслеживаете?</span>
+                            <span class="faq-arrow">&#9660;</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Мы анализируем выполнение KPI, вовлеченность, достижения, прогресс в обучении и другие
+                                ключевые показатели производительности.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Как вы подбираете персонал для компании?</span>
+                            <span class="faq-arrow">&#9660;</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Мы анализируем ваши требования, создаем вакансии, проводим собеседования и тестирование
+                                кандидатов, чтобы найти лучших для вашей команды.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-column">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <span>Можно ли интегрировать вашу систему с нашей?</span>
+                            <span class="faq-arrow">&#9660;</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Да, мы интегрируем нашу систему с вашими внутренними инструментами для автоматического
+                                обновления и получения актуальных данных.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            // JavaScript для раскрытия/свертывания
+            document.querySelectorAll('.faq-question').forEach(item => {
+                item.addEventListener('click', () => {
+                    const faqItem = item.closest('.faq-item');
+                    faqItem.classList.toggle('open');
+                });
+            });
+        </script>
+
     </main>
 </body>
 
