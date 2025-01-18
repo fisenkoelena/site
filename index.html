@@ -20,7 +20,10 @@
                     <a class="header-menu-link" href="/">Главная</a>
                 </li>
                 <li class="header-menu-item">
-                    <a class="header-menu-link" href="/">Для компании</a>
+                    <a class="header-menu-link" href="/">Вакансии</a>
+                </li>
+                <li class="header-menu-item">
+                    <a class="header-menu-link" href="/">Аналитика</a>
                 </li>
                 <li class="header-menu-item">
                     <a class="header-menu-link" href="/">Информация</a>
@@ -37,30 +40,38 @@
         </div>
     </header>
     <main class="content">
+        <section class="search-main">
+            <h2 class="visually-hidden">Выбор поиска между работадателем и соискателм</h2>
+            <nav class="search">
+                <a class="search-item" href="#employer-info">Для работодателей</a>
+                <a class="search-item" href="#jobseeker-info">Для соискателей</a>
+            </nav>
+        </section>
         <section class="info-container">
-            <h2 class="visually-hidden">Предложение</h2>
-            <div class="info">
+            <h3 class="visually-hidden">Предложение</h3>
+            <div class="info info-with-background">
                 <div class="info-display">
                     <img src="./images/info/display.png"
-                        alt="Инфографика, где руки ызаимодействуют с виджетами на их устройстве."
+                        alt="Инфографика, где руки взаимодействуют с виджетами на их устройстве."
                         class="info-card-image" width="483" height="455" loading="lazy">
                 </div>
 
                 <div class="info-card-body">
-                    <h3 class="backdrop-title" data-title="Партнер">
-                        надежный партнер в</br>
-                        эффективной работе с</br>
-                        кадровым управлением</h3>
-                    <p class="info-lower-text">Современные решения для бизнеса:
-                        отчетность, подбор и анализ</p>
+                    <h3 class="info-backdrop-title" data-title="Партнер">
+                        надежный партнер в<br>
+                        подборе персонала <br>
+                        и поиске работы</h3>
+                    <p class="info-lower-text">
+                        предоставляем актуальную информацию о рынке труда
+                    </p>
                     <a href="/" class="info-card-button button">
-                        Подробнее об услугах
+                        Подробнее о вакансиях
                     </a>
                 </div>
             </div>
         </section>
         <section class="banner">
-            <h3 class="visually-hidden">Услуги</h3>
+            <h4 class="visually-hidden">Услуги</h4>
             <h3 class="banner-title">Наши услуги</h3>
             <div class="banner-colums">
                 <div class="banner-content-column">
@@ -83,8 +94,21 @@
                 </div>
             </div>
         </section>
+        <section id="employer-info" class="employer">
+            <h5 class="visually-hidden">Информация для работадателей</h5>
+            <div class="employer-info-image">
+                <img src="images/people/men.png" width="350px" height="350px" alt="Информация для работодателей">
+            </div>
+            <div class="employer-info-text">
+                <h2 class="employer-high-text">Информация для работадателей</h2>
+                <p class="employer-lower-text">Просматривайте резюме, <br>
+                    получайте аналитику рынка труда,<br>заказывайте отчеты по кандидатам
+                </p>
+                <a href="#registration" class="employer-button-register button">Перейти к регистрации</a>
+            </div>
+        </section>
         <section class="example">
-            <h3 class="visually-hidden">Примеры работы</h3>
+            <h6 class="visually-hidden">Примеры работы</h6>
             <div class="example-container">
                 <div class="example-left-image">
                     <img src="images/example/board.png" alt="Пример работы сайта" />
@@ -118,52 +142,24 @@
                             <p>Точные решения для вашего бизнеса</p>
                         </div>
                     </li>
-                    <li class="example-info-column">
-                        <div class="example-icon">
-                            <img src="images/example/icon4.png" alt="Иконка 4">
-                        </div>
-                        <div class="example-text">
-                            <h3>API-интеграция</h3>
-                            <p>Принимайте решения здесь и сейчас</p>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </section>
-        <section class="form-container">
-            <h4 class="visually-hidden">Подать заявку</h4>
-            <div class="form-content">
-                <h1 class="form-title">Подать заявку</h1>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="first-name">Имя:</label>
-                        <input type="text" id="first-name" name="first-name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="last-name">Фамилия:</label>
-                        <input type="text" id="last-name" name="last-name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="middle-name">Отчество:</label>
-                        <input type="text" id="middle-name" name="middle-name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">e-mail:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-checkbox-group">
-                        <input type="checkbox" id="agree" name="agree">
-                        <label for="agree">Я согласен на обработку персональных данных</label>
-                    </div>
-                    <button type="submit" class="form-submit-btn">Отправить</button>
-                </form>
+        <section id="jobseeker-info" class="jobseeker">
+            <h5 class="visually-hidden">Информация для соискателей</h5>
+            <div class="employer-info-image">
+                <img src="images/people/woman.png" width="350px" height="350px" alt="Информация для работодателей">
             </div>
-            <div class="form-image-container">
-                <img src="images/form/bigimg.png" alt="Стилизованная картинка" class="form-big-image">
+            <div class="employer-info-text">
+                <h2 class="employer-high-text">Информация для соискателей</h2>
+                <p class="employer-lower-text">Подбирайте вакансии, <br>
+                    проверяйте статус работодателей,<br>получайте рекомендации по резюме
+                </p>
+                <a href="#registration" class="employer-button-register button">Перейти к регистрации</a>
             </div>
         </section>
         <section class="faq-section">
-            <h5 class="faq-title">Часто задаваемые вопросы</h5>
+            <h6 class="faq-title">Часто задаваемые вопросы</h6>
             <div class="faq-columns">
                 <div class="faq-column">
                     <div class="faq-item">
@@ -224,15 +220,16 @@
                 });
             });
         </script>
-
     </main>
     <footer>
         <div class="footer-container">
             <div class="logo">
-                <img src="images/logo2.png" alt="Logo">
+                <a href="/" class="footer-logo">
+                    <img src="images/logo2.png" height="40px" alt="Logo">
+                </a>
             </div>
-            <div class="navigation">
-                <p class="nav-title">Навигация</p>
+            <div class="footer-navigation">
+                <p class="footer-nav-title">Навигация</p>
                 <ul>
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">Частным лицам</a></li>
@@ -240,9 +237,9 @@
                     <li><a href="#">Премиум</a></li>
                 </ul>
             </div>
-            <div class="contact">
+            <div class=".footer-contact">
                 <p>Круглосуточная обратная связь</p>
-                <p class="phone">+7 (911) 999 99 99</p>
+                <p class="footer-phone">+7 (911) 999 99 99</p>
             </div>
         </div>
     </footer>
