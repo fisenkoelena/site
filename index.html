@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Declarent</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg" href="assets/images/logomain.svg">
 </head>
 
 <body>
     <header class="header">
         <a class="header-logo" href="/">
-            <img class="header-logo-image" src="images/logo.png" alt="Eclarent Logo" width="215" height="60"
+            <img class="header-logo-image" src="assets/images/logo.png" alt="Eclarent Logo" width="215" height="60"
                 loading="lazy" />
         </a>
         <nav class="header-menu">
@@ -20,16 +21,13 @@
                     <a class="header-menu-link" href="/">Главная</a>
                 </li>
                 <li class="header-menu-item">
-                    <a class="header-menu-link" href="/">Вакансии</a>
+                    <a class="header-menu-link" href="vacancy.html">Вакансии</a>
                 </li>
                 <li class="header-menu-item">
-                    <a class="header-menu-link" href="/">Аналитика</a>
+                    <a class="header-menu-link" href="information.html">Информация</a>
                 </li>
                 <li class="header-menu-item">
-                    <a class="header-menu-link" href="/">Информация</a>
-                </li>
-                <li class="header-menu-item">
-                    <a class="header-menu-link" href="/">О нас</a>
+                    <a class="header-menu-link" href="about.html">О нас</a>
                 </li>
             </ul>
         </nav>
@@ -51,7 +49,7 @@
             <h3 class="visually-hidden">Предложение</h3>
             <div class="info info-with-background">
                 <div class="info-display">
-                    <img src="./images/info/display.png"
+                    <img src="assets/images/info/display.svg"
                         alt="Инфографика, где руки взаимодействуют с виджетами на их устройстве."
                         class="info-card-image" width="483" height="455" loading="lazy">
                 </div>
@@ -70,34 +68,51 @@
                 </div>
             </div>
         </section>
-        <section class="banner">
+
+
+        <section class="wrapper"> 
             <h4 class="visually-hidden">Услуги</h4>
             <h3 class="banner-title">Наши услуги</h3>
-            <div class="banner-colums">
-                <div class="banner-content-column">
-                    <img class="banner-small-img" src="images/banner/отчетность.png" alt="Девушка с отчетами">
-                    <h4 class="banner-colums-text-small">Нормы отчетность в API</h4>
-                    <p class="banner-smaller"> Предоставляем современные формы отчетности через API, чтобы Вы могли
-                        легко отслеживать показатели бизнеса</p>
-                </div>
-                <div class="banner-content-column banner-content-column-large">
-                    <img class="banner-big-img" src="images/banner/нормы.png" alt="Девушка с нормами планов">
-                    <h4 class="banner-colums-text">Нормы планов</h4>
-                    <p class="banner-bigger">Разрабатываем наглядные таблицы, аналитические отчеты для эффективного
-                        контроля и планирования работы компании</p>
-                </div>
-                <div class="banner-content-column">
-                    <img class="banner-small-img" src="images/banner/оценка.png" alt="Пара людей оценивают">
-                    <h4 class="banner-colums-text-small">Оценка сотрудников</h4>
-                    <p class="banner-smaller"> Проводим анализ деятельности сотрудниковс акцентом на их вклад в успех
-                        компании, предоставляем данные</p>
-                </div>
-            </div>
+            <div class="slider"> 
+                <div class="slider__item"> 
+                    <img data-lazy="assets/images/banner/norms.svg" alt=""> 
+                    <div class="slider__text">
+                        <h4 class="banner-colums-text">Нормы планов</h4>
+                        <p class="banner-bigger">Разрабатываем наглядные<br> аналитические отчеты для<br> работы компании</p></div>
+                </div> 
+                <div class="slider__item"> 
+                    <img data-lazy="assets/images/banner/otchet.svg" alt=""> 
+                    <div class="slider__text">
+                        <h4 class="banner-colums-text">отчетность в API</h4>
+                        <p class="banner-bigger"> Предоставляем современные<br> формы отчетности для<br> отслеживания бизнеса</p>
+                    </div>
+                </div> 
+                <div class="slider__item"> 
+                    <img data-lazy="assets/images/banner/otsenka.svg" alt=""> 
+                    <div class="slider__text">
+                        <h4 class="banner-colums-text">Оценка работников</h4>
+                        <p class="banner-bigger"> Проводим анализ деятельности<br> сотрудников с акцентом на их<br> вклад в успех
+                            компании</p>
+                    </div>
+                </div> 
+                <div class="slider__item"> 
+                    <img data-lazy="assets/images/banner/podbor.svg" alt=""> 
+                    <div class="slider__text">
+                        <h4 class="banner-colums-text">подбор персонала</h4>
+                        <p class="banner-bigger"> Определяем процент тех<br> сотрудников, необходимых<br> для трудоустройства</p>
+                    </div>
+                </div> 
+            </div> 
+        
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+            <script src="assets/js/slick.min.js"></script> 
+            <script src="assets/js/script.js"></script> 
         </section>
+
         <section id="employer-info" class="employer">
             <h5 class="visually-hidden">Информация для работадателей</h5>
             <div class="employer-info-image">
-                <img src="images/people/men.png" width="350px" height="350px" alt="Информация для работодателей">
+                <img src="assets/images/people/men.svg" width="350px" height="350px" alt="Информация для работодателей">
             </div>
             <div class="employer-info-text">
                 <h2 class="employer-high-text">Информация для работадателей</h2>
@@ -111,13 +126,13 @@
             <h6 class="visually-hidden">Примеры работы</h6>
             <div class="example-container">
                 <div class="example-left-image">
-                    <img src="images/example/board.png" alt="Пример работы сайта" />
+                    <img src="assets/images/example/board.svg" alt="Пример работы сайта" />
                 </div>
 
                 <ul class="example-info-columns">
                     <li class="example-info-column">
                         <div class="example-icon">
-                            <img src="images/example/icon1.png" alt="Иконка 1">
+                            <img src="assets/images/example/icon1.svg" alt="Иконка 1">
                         </div>
                         <div class="example-text">
                             <h3>Прозрачная отчетность</h3>
@@ -126,7 +141,7 @@
                     </li>
                     <li class="example-info-column">
                         <div class="example-icon">
-                            <img src="images/example/icon2.png" alt="Иконка 2">
+                            <img src="assets/images/example/icon2.svg" alt="Иконка 2">
                         </div>
                         <div class="example-text">
                             <h3>Аналитика онлайн</h3>
@@ -135,7 +150,7 @@
                     </li>
                     <li class="example-info-column">
                         <div class="example-icon">
-                            <img src="images/example/icon3.png" alt="Иконка 3">
+                            <img src="assets/images/example/icon3.svg" alt="Иконка 3">
                         </div>
                         <div class="example-text">
                             <h3>Подбор персонала</h3>
@@ -148,7 +163,7 @@
         <section id="jobseeker-info" class="jobseeker">
             <h5 class="visually-hidden">Информация для соискателей</h5>
             <div class="employer-info-image">
-                <img src="images/people/woman.png" width="350px" height="350px" alt="Информация для работодателей">
+                <img src="assets/images/people/woman.svg" width="350px" height="350px" alt="Информация для работодателей">
             </div>
             <div class="employer-info-text">
                 <h2 class="employer-high-text">Информация для соискателей</h2>
@@ -165,7 +180,7 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             <span>Что такое инфографика для компаний?</span>
-                            <span class="faq-arrow">&#9660;</span>
+                            <img src="assets/images/arrows/down.svg" alt="" class="faq-arrow">
                         </div>
                         <div class="faq-answer">
                             <p>Мы разрабатываем визуальные материалы, такие как графики, диаграммы и схемы, которые
@@ -177,7 +192,7 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             <span> Какие данные о сотрудниках вы отслеживаете?</span>
-                            <span class="faq-arrow">&#9660;</span>
+                            <img src="assets/images/arrows/down.svg" alt="" class="faq-arrow">
                         </div>
                         <div class="faq-answer">
                             <p>Мы анализируем выполнение KPI, вовлеченность, достижения, прогресс в обучении и другие
@@ -189,7 +204,7 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             <span>Как вы подбираете персонал для компании?</span>
-                            <span class="faq-arrow">&#9660;</span>
+                            <img src="assets/images/arrows/down.svg" alt="" class="faq-arrow">
                         </div>
                         <div class="faq-answer">
                             <p>Мы анализируем ваши требования, создаем вакансии, проводим собеседования и тестирование
@@ -201,7 +216,7 @@
                     <div class="faq-item">
                         <div class="faq-question">
                             <span>Можно ли интегрировать вашу систему с нашей?</span>
-                            <span class="faq-arrow">&#9660;</span>
+                            <img src="assets/images/arrows/down.svg" alt="" class="faq-arrow">
                         </div>
                         <div class="faq-answer">
                             <p>Да, мы интегрируем нашу систему с вашими внутренними инструментами для автоматического
@@ -220,12 +235,15 @@
                 });
             });
         </script>
+
+        <button class="ufive_uptop"></button>
+        <script src="assets/js/main.js"></script>
     </main>
     <footer>
         <div class="footer-container">
             <div class="logo">
                 <a href="/" class="footer-logo">
-                    <img src="images/logo2.png" height="40px" alt="Logo">
+                    <img src="assets/images/logo2.png" height="40px" alt="Logo">
                 </a>
             </div>
             <div class="footer-navigation">
@@ -242,6 +260,7 @@
                 <p class="footer-phone">+7 (911) 999 99 99</p>
             </div>
         </div>
+        <div class="copyright"><p>© Все права защищены</p></div>
     </footer>
 </body>
 
