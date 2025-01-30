@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="assets/css/dash.css">
+  <link rel="icon" type="image/svg" href="assets/images/logomain.svg">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <a class="header-logo" href="/">
+      <img class="header-logo-image" src="assets/images/logo.png" alt="Eclarent Logo" width="215" height="60" loading="lazy" />
+    </a>
+    <nav class="header-menu">
+      <ul class="header-menu-list">
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="index.html">Главная</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="vacancy.html">Работа</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="vacancy.html">Аналитика</a>
+        </li>
+        <li class="header-menu-item">
+          <a class="header-menu-link" href="about.html">О нас</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Пиктограмма пользователя вместо кнопки -->
+    <a class="header-user-icon" href="#">
+      <img src="assets/images/logo4.svg" alt="Пользователь" width="40" height="40">
+    </a>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Статистика выполненных работ -->
+    <section class="dashboard-section">
+      <h2>Статистика выполненных работ</h2>
+      <div class="chart-container">
+        <canvas id="executorWorkChart"></canvas>
+      </div>
+    </section>
+
+    <!-- Последние выполненные задания -->
+    <section class="dashboard-section">
+      <h2>Последние выполненные задания</h2>
+      <ul class="task-list">
+        <li><strong>Задача 1:</strong> Разработка сайта. <span class="status completed">Выполнено</span></li>
+        <li><strong>Задача 2:</strong> Дизайн логотипа. <span class="status completed">Выполнено</span></li>
+        <li><strong>Задача 3:</strong> Создание презентации. <span class="status in-progress">В процессе</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="logo">
+        <a href="/" class="footer-logo">
+          <img src="assets/images/logo2.png" height="40px" alt="Logo">
+        </a>
+      </div>
+      <div class="footer-navigation">
+        <p class="footer-nav-title">Навигация</p>
+        <ul>
+          <li><a href="#">Частным лицам</a></li>
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Бизнесу</a></li>
+          <li><a href="#">Премиум</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <p>Круглосуточная обратная связь</p>
+        <p class="footer-phone">+7 (911) 999 99 99</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© Все права защищены</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/dash.js"></script>
+</body>
+</html>

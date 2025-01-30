@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Регистрация - Declarent</title> 
+    <link rel="stylesheet" href="assets/css/style-registration.css"> 
+    <link rel="icon" type="image/svg" href="assets/images/logomain.svg"> 
+</head> 
+<body> 
+ 
+    <h1 class="visually-hidden"><span>исполнителя</span></h1>
+
+    <div class="container"> 
+        <div class="left-section"> 
+            <img src="assets/images/logo3.svg" alt="" class="logo"> 
+            <h2>зарегистрированы?</h2> 
+            <p>Все пользователи на Declarent знают, что много пользователей уже здесь. Каждый день к нам присоединяются новые люди.</p> 
+            <a href="#" class="btn">Войти</a> 
+        </div> 
+ 
+        <div class="right-section"> 
+            <h2>Создайте аккаунт</h2> 
+            <p>Давайте зарегистрируем вас, чтобы вы могли приступить к работе.</p> 
+ 
+            <form id="registration-form" action="#" method="POST"> 
+                <div class="input-group"> 
+                    <input type="text" name="first_name" placeholder="Имя" required> 
+                    <input type="text" name="last_name" placeholder="Фамилия" required> 
+                </div> 
+                <input type="email" name="email" placeholder="Email" required> 
+                <input type="password" name="password" placeholder="Введите надежный пароль" required> 
+                <input type="password" name="confirm_password" placeholder="Повторите пароль" required> 
+                 
+                <div class="checkbox-group"> 
+                    <input type="checkbox" id="terms" required> 
+                    <label for="terms">Я принимаю условия и политику Declarent</label> 
+                </div> 
+ 
+                <button type="submit" class="btn-primary">Зарегистрироваться</button> 
+            </form> 
+        </div> 
+    </div> 
+ 
+    <script src="assets/js/reg.js"></script> 
+</body> 
+</html>
